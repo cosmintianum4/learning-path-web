@@ -41,20 +41,101 @@ body {
 }
 
 .recipe-panel {
-  background-color: green;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }
 
-.new-recipe {
-  background-color: red;
-}
-
-img {
+.recipe-img {
   max-width: 100px;
   height: auto;
+  margin-left: auto;
 }
 
 .recipe-card {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn {
+  height: 45px;
+  color: white;
+  border-radius: 5px;
+  font-size: larger;
+  border: 0px;
+  padding: 12px;
+}
+
+.btn-green {
+  background-color: rgb(138, 191, 58);
+}
+
+.btn-red {
+  background-color: rgb(219, 81, 81);
+}
+
+.new-recipe-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-input-combo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.long-input {
+  width: 500px;
+}
+
+.short-input {
+  width: 385px;
+}
+
+input {
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.new-recipe-img {
+  height: 180px;
+  width: auto;
+}
+
+.desc-input {
+  height: 100px;
+}
+
+.ingredient-row {
+  display: flex;
+  gap: 20px;
+}
+
+.ingredient-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quantity-input {
+  width: 35px;
+}
+
+.btn-x {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  font-size: 14px;
 }/*# sourceMappingURL=index.css.map */
