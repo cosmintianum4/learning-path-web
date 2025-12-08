@@ -195,4 +195,7 @@ input {
   .nav-menu:hover .nav-dropdown {
     display: flex;
   }
+  .long-input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */
