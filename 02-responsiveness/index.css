@@ -158,7 +158,6 @@ input {
 
 @media (max-width: 1200px) {
   .navbar {
-    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 20px;
   }
@@ -173,7 +172,7 @@ input {
     display: none;
   }
   .nav-dropdown {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -182,10 +181,16 @@ input {
     border-top: 1px solid #ccc;
     flex-direction: column;
     z-index: 100;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2s ease-in-out;
   }
   .nav-item {
     padding: 10px;
     border-bottom: 1px solid #ccc;
+  }
+  .nav-dropdown.show {
+    max-height: 200px;
   }
   .nav-menu:hover .nav-dropdown {
     display: flex;
