@@ -44,8 +44,6 @@ body {
         flex-direction: column;
         padding: 20px;
     }
-
-    
 }
 
 .recipe-panel{
@@ -77,6 +75,10 @@ body {
     font-size: larger;
     border: 0px;
     padding: 12px;
+
+    @media (max-width: 1200px) {
+        font-size: smaller;
+    }
 }
 
 .btn-green{

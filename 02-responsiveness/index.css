@@ -75,6 +75,11 @@ body {
   border: 0px;
   padding: 12px;
 }
+@media (max-width: 1200px) {
+  .btn {
+    font-size: smaller;
+  }
+}
 
 .btn-green {
   background-color: rgb(138, 191, 58);
