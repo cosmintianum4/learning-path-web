@@ -14,6 +14,7 @@ body {
   color: #666666;
   padding: 10px;
   gap: 24px;
+  position: relative;
 }
 
 .page-title {
@@ -30,6 +31,10 @@ body {
 
 .auth-button .shopping-list-button {
   cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .content {
@@ -149,4 +154,40 @@ input {
   height: 35px;
   padding: 0;
   font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .nav-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #e7e4e4;
+    border-top: 1px solid #ccc;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .nav-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  .nav-menu:hover .nav-dropdown {
+    display: flex;
+  }
 }/*# sourceMappingURL=index.css.map */
