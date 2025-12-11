@@ -45,7 +45,7 @@ body {
     justify-content: center ;
     margin-top: 20px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 768px) {
         flex-direction: column;
         padding: 20px;
     }
@@ -81,7 +81,7 @@ body {
     border: 0px;
     padding: 12px;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 768px) {
         font-size: smaller;
     }
 }
@@ -160,7 +160,7 @@ input{
     font-size: 14px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     .navbar{
         justify-content: space-between;
         padding: 10px 20px;
