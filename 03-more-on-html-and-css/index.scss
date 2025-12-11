@@ -54,7 +54,7 @@ body {
 .recipe-panel{
     // background-color: green;
     display: flex;
-    gap:30px;
+    gap: 15px;
     flex-direction: column;
 }
 
@@ -226,4 +226,43 @@ input{
         width: 100%;
     }
     
+}
+
+.indredients-form{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    width: 290px;
+}
+
+.recipe-card-container:hover .indredients-form {
+    display: flex; /* Changes it from 'none' to visible */
+    gap: 5px;
+
+}
+
+.recipe-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.ingredient-list-header{
+    color: #38763b;
+    font-weight: bold;
+}
+
+.ingredient-box{
+    display: flex;
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(246, 197, 162);
+    align-items: center;
+}
+
+.address-input{
+    resize: both;
+    width: 290px;
 }
