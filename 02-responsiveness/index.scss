@@ -173,6 +173,9 @@ input{
     .menu-icon{
         cursor: pointer;
         display: block;
+        border: solid 1px #ccc;
+        border-radius: 3px;
+        color: #777777;
     }
 
     .nav-buttons{
@@ -210,5 +213,5 @@ input{
     .long-input {
         width: 100%;
     }
-
+    
 }
