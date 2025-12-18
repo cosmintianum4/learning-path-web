@@ -1,5 +1,6 @@
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   background-color: #ffffff;
   margin: 0;
 }
@@ -43,17 +44,17 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .content {
+
+  @media (max-width: 768px) {
     flex-direction: column;
     padding: 20px;
   }
 }
 
 .recipe-panel {
+  // background-color: green;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   flex-direction: column;
 }
 
@@ -79,11 +80,11 @@ body {
   font-size: medium;
   border: 0px;
   padding: 12px;
+
   cursor: pointer;
   transition: background-color 0.2;
-}
-@media (max-width: 768px) {
-  .btn {
+
+  @media (max-width: 768px) {
     font-size: smaller;
   }
 }
@@ -108,12 +109,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  // background-color: red;
 }
 
 .text-input-combo {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  // background-color: red;
 }
 
 .btns {
@@ -130,6 +133,7 @@ body {
 }
 
 input {
+  // width: 350px;
   height: 30px;
   border: 1px solid grey;
   border-radius: 5px;
@@ -147,6 +151,7 @@ input {
 .ingredient-row {
   display: flex;
   gap: 20px;
+  // height: 20px;
 }
 
 .ingredient-list {
@@ -171,9 +176,11 @@ input {
     justify-content: space-between;
     padding: 10px 20px;
   }
+
   .nav-menu {
     display: block;
   }
+
   .menu-icon {
     cursor: pointer;
     display: block;
@@ -181,9 +188,11 @@ input {
     border-radius: 3px;
     color: #777777;
   }
+
   .nav-buttons {
     display: none;
   }
+
   .nav-dropdown {
     display: block;
     position: absolute;
@@ -198,17 +207,58 @@ input {
     overflow: hidden;
     transition: max-height 2s ease-in-out;
   }
+
   .nav-item {
     padding: 10px;
     border-bottom: 1px solid #ccc;
   }
+
   .nav-dropdown.show {
     max-height: 200px;
   }
+
   .nav-menu:hover .nav-dropdown {
     display: flex;
   }
+
   .long-input {
     width: 100%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+.indredients-form {
+  display: flex;
+  flex-direction: column;
+  display: none;
+  width: 290px;
+}
+
+.recipe-card-container:hover .indredients-form {
+  display: flex; /* Changes it from 'none' to visible */
+  gap: 5px;
+}
+
+.recipe-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ingredient-list-header {
+  color: #38763b;
+  font-weight: bold;
+}
+
+.ingredient-box {
+  display: flex;
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(246, 197, 162);
+  align-items: center;
+}
+
+.address-input {
+  resize: both;
+  width: 290px;
+}
