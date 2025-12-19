@@ -191,12 +191,12 @@ console.log(findColor(mappings, 'magenta'));
 13. Write a function that returns true if all elements in the array have the area > = 10, false otherwise.
 */
 
-function calculateArea(obj) {
+function calculateObjArea(obj) {
   return obj.width * obj.height;
 }
 
 function getAreasAreBigger(arr, minArea) {
-  return arr.every(x => calculateArea(x) >= minArea);
+  return arr.every(x => calculateObjArea(x) >= minArea);
 }
 
 console.log(getAreasAreBigger(mappings, 10))
